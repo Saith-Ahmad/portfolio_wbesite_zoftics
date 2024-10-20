@@ -16,7 +16,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, designation, te
     initial={{ opacity: 0, y: -75 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.9, delay: 0.25 }}
-    className="bg-black bg-opacity-50 backdrop-blur-lg p-6 rounded-lg shadow-md flex flex-col">
+    className="bg-black bg-opacity-50 backdrop-blur-lg p-6 rounded-lg shadow-md flex flex-col card_shadow">
       <div className="flex items-center mb-4">
         <Image src={image} alt={name} width={50} height={50} className="rounded-full mr-4" />
         <div>

@@ -6,7 +6,7 @@ const Contact = () => {
       
       <div className="flex flex-col justify-center items-center gap-3">
         <p className="text-primary active">We are eager to help you</p>
-        <h2 className="heading-2 text-white text-center mb-8">What Our Clients Say!</h2>
+        <h2 className="heading-2 text-white text-center mb-8">Lets get in Touch!</h2>
       </div>
 
       <form className="bg-black bg-opacity-50 backdrop-blur-lg border-1 border-primary box_shadow p-6 rounded-lg shadow-md mx-auto w-full">
