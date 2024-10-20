@@ -1,5 +1,8 @@
 import About from "@/components/home/about";
+import Contact from "@/components/home/contact";
 import Hero from "@/components/home/hero";
+import Services from "@/components/home/services";
+import TestimonialWrapper from "@/components/home/testimonial-wrapper";
 import React from "react";
 
 const page = () => {
@@ -7,7 +10,9 @@ const page = () => {
     <div>
       <Hero />
       <About />
-      {/* Add more components here */}
+      <Services/>
+      <TestimonialWrapper/>
+      <Contact/>
     </div>
   );
 };

@@ -8,18 +8,26 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	container: {
+		center : true,
+		padding: {
+		  DEFAULT: '1rem',
+		  sm: '2rem',
+		  lg: '4rem',
+		  xl: '5rem',
+		  '2xl': '6rem',
+		},
+	  },
   	extend: {
   		colors: {
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
+  			primary: "#9069d2",
+  			secondary: '#fff',
+			para:"#918EA0"
+  		},	
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate"),
+],
 };
 export default config;
