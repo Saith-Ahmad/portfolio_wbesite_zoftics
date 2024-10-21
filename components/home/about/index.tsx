@@ -7,14 +7,14 @@ import { Check } from "lucide-react";
 
 const About = () => {
   return (
-      <div className="container py-12 border-none px-4 w-full flex justify-center items-center my-10" id='about'>
+      <div className="container py-12  w-full items-center my-10" id='about'>
         <motion.div
          initial={{ opacity: 0, scale:0.9 }}
          whileInView={{ opacity: 1, scale: 1 }}
          transition={{ duration: 0.9, delay: 0.25 }}
-        className="bg-black bg-opacity-50 backdrop-blur-lg flex flex-col md:flex-row justify-center items-center rounded-3xl px-14 py-12 border-[1px] border-primary box_shadow">
+        className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col md:flex-row justify-between items-center rounded-3xl px-14 py-12 border-[1px] border-primary box_shadow">
            
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 md:w-[50%] ">
           <p className="text-primary">Empowering Your Business</p>
           <h2 className="heading-2 font-semibold text-white">
             About <span className="text-primary italic">X</span>oftics
@@ -37,12 +37,12 @@ const About = () => {
               Customized solutions tailored to your unique needs.
             </li>
           </ul>
-          <button className="bg-primary text-white px-4 py-2 rounded-lg font-medium shadow-gray-900 shadow-lg hover:bg-[#7d50cb] hvr-scl">
+          <button className="btn_primary">
             Get Started
           </button>
         </div>
         
-        <div className="">
+        <div className="md:w-[50%]  flex justify-center items-center">
           <Image
             src={AboutImg}
             alt="About Zoftics"

@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         <nav className="hidden md:flex space-x-8">
-          <Link href="#" onClick={() => scrollToSection('')} className={`text-white ${activeLink == '' || activeLink == '#' && "active"} hover:text-primary transition py-1 para-large`}>Home</Link>
+          <Link href="#" onClick={() => scrollToSection('#')} className={`text-white ${activeLink == '/' || activeLink == '#' && "active"} hover:text-primary transition py-1 para-large`}>Home</Link>
           <Link href="#about" onClick={() => scrollToSection('about')} className={`text-white ${activeLink === 'about' && 'active'} py-1 hover:text-primary transition para-large`}>About</Link>
           <Link href="#services" onClick={() => scrollToSection('services')} className={`text-white ${activeLink === 'services' && 'active'} py-1 hover:text-primary transition para-large`}>Services</Link>
           <Link href="#testimonials" onClick={() => scrollToSection('testimonials')} className={`text-white ${activeLink === 'testimonials' && 'active'} py-1 hover:text-primary transition para-large`}>Testimonials</Link>
@@ -72,8 +72,8 @@ const Navbar = () => {
         {isMenuOpen && (
           <>
             <div className="flex flex-col space-y-3 mt-4 justify-center items-center ">
-              <Link href="#home" onClick={() => scrollToSection('')} className={`text-white ${activeLink == '/#' || activeLink == '#' && "active"} hover:text-primary transition py-1 para-large`}>Home</Link>
-              <Link href="#about" onClick={() => scrollToSection('about')} className={`text-white ${activeLink === '/#about' && 'active'} py-1 hover:text-primary transition para-large`}>About</Link>
+              <Link href="#home" onClick={() => scrollToSection('#')} className={`text-white ${activeLink == '#' || activeLink == '#' && "active"} hover:text-primary transition py-1 para-large`}>Home</Link>
+              <Link href="#about" onClick={() => scrollToSection('about')} className={`text-white ${activeLink === 'about' && 'active'} py-1 hover:text-primary transition para-large`}>About</Link>
               <Link href="#services" onClick={() => scrollToSection('services')} className={`text-white ${activeLink === 'services' && 'active'} py-1 hover:text-primary transition para-large`}>Services</Link>
               <Link href="#testimonials" onClick={() => scrollToSection('testimonials')} className={`text-white ${activeLink === 'testimonials' && 'active'} py-1 hover:text-primary transition para-large`}>Testimonials</Link>
               <Link href="#contact" onClick={() => scrollToSection('contact')} className={`text-white ${activeLink === 'contact' && 'active'} py-1 hover:text-primary transition para-large`}>Contact</Link>

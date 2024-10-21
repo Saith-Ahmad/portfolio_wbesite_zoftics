@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="container py-12 px-12 my-12 w-full" id="contact">
+    <div className="container py-12 px-6 my-12 w-full" id="contact">
       
       <div className="flex flex-col justify-center items-center gap-3">
         <p className="text-primary active">We are eager to help you</p>
@@ -52,7 +52,7 @@ const Contact = () => {
         <div className="text-center">
           <button
             type="submit"
-            className="bg-primary text-white px-4 py-2 rounded-lg font-medium shadow-gray-900 shadow-lg hover:bg-[#7d50cb] hvr-scl"
+            className="btn_primary"
           >
             Send Message
           </button>

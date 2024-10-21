@@ -9,7 +9,7 @@ const Footer = () => {
         
        
         <div className="mb-6 lg:mb-0">
-          <h4 className="heading-4 mb-4 font-bold"><span className="text-primary italic">X</span>oftics</h4>
+          <Link href={'/'}><h4 className="heading-4 mb-4 font-bold"><span className="text-primary italic">X</span>oftics</h4></Link>
           <p className="text-para">Innovative digital solutions to grow your business.</p>
         </div>
         
@@ -54,7 +54,7 @@ const Footer = () => {
               placeholder="Enter your email"
               className="px-4 py-2 rounded mb-4  bg-gray-300 text-black font-semibold focus:border-none focus:outline-none"
             />
-            <button className="bg-primary text-white px-4 py-2 rounded-lg font-medium shadow-gray-900 shadow-lg hover:bg-[#7d50cb] hvr-scl">
+            <button className="btn_primary">
               Subscribe
             </button>
           </form>
