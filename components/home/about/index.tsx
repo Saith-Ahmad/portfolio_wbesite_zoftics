@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import AboutImg from "../../../app/assets/aboutUs.png";
-import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="container py-12  w-full items-center my-10" id='about'>
-      <div className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col md:flex-row justify-between items-center rounded-3xl px-14 py-12 border-[1px] border-primary box_shadow">
+    <div className="container mx-auto py-12 px-4 my-20" id='about'>
+      <div
+      className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col md:flex-row justify-between items-center rounded-3xl px-14 py-12 border-[1px] border-primary box_shadow">
 
         <div className="flex flex-col gap-3 md:w-[50%] ">
           <p className="text-primary">Empowering Your Business</p>
