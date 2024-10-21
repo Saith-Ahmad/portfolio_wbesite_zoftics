@@ -19,6 +19,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Xoftics",
   description: "Digital Solutions Company",
+  icons:{
+    icon : '/favicon.png'
+  }
 };
 
 export default function RootLayout({

@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../app/assets/logo.png"
 
 const Footer = () => {
   return (
@@ -9,8 +11,8 @@ const Footer = () => {
         
        
         <div className="mb-6 lg:mb-0">
-          <Link href={'/'}><h4 className="heading-4 mb-4 font-bold"><span className="text-primary italic">X</span>oftics</h4></Link>
-          <p className="text-para">Innovative digital solutions to grow your business.</p>
+          <Link href={'/'}><Image src={Logo} alt="arc" height={40}/></Link>
+          <p className="text-para mt-2">Innovative digital solutions to grow your business.</p>
         </div>
         
        

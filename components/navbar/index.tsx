@@ -1,7 +1,9 @@
 'use client';
 import { Menu, X } from "lucide-react";
+import Logo from "../../app/assets/logo.png"
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -37,7 +39,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="container hidden lg:flex justify-between items-center min-h-[70px] py-6">
         <div className="text-white font-bold text-xl">
-          <Link href={'/'}><h3 className="text-white heading-3"><span className="text-primary font-black italic">X</span>oftics</h3></Link>
+          <Link href={'/'}><Image src={Logo} alt='Logo' height={50}/></Link>
         </div>
 
         <nav className="hidden md:flex space-x-8">
@@ -72,7 +74,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <>
             <div className="flex flex-col space-y-3 mt-4 justify-center items-center ">
-              <Link href="#home" onClick={() => scrollToSection('#')} className={`text-white ${activeLink == '#' || activeLink == '#' && "active"} hover:text-primary transition py-1 para-large`}>Home</Link>
+            <Link href="#" onClick={() => scrollToSection('#')} className={`text-white ${activeLink == '/' || activeLink == '#' && "active"} hover:text-primary transition py-1 para-large`}>Home</Link>
               <Link href="#about" onClick={() => scrollToSection('about')} className={`text-white ${activeLink === 'about' && 'active'} py-1 hover:text-primary transition para-large`}>About</Link>
               <Link href="#services" onClick={() => scrollToSection('services')} className={`text-white ${activeLink === 'services' && 'active'} py-1 hover:text-primary transition para-large`}>Services</Link>
               <Link href="#testimonials" onClick={() => scrollToSection('testimonials')} className={`text-white ${activeLink === 'testimonials' && 'active'} py-1 hover:text-primary transition para-large`}>Testimonials</Link>

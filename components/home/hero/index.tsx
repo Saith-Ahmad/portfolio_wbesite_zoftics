@@ -10,7 +10,7 @@ function Hero() {
     initial={{ opacity: 0, y: 75 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.9, delay: 0.25 }}
-    className='container relative flex justify-center items-center lg:h-screen w-full mt-28 overflow-hidden' id='#'>
+    className='container relative flex justify-center items-center lg:h-screen w-full mt-28 lg:mt-16 overflow-hidden' id='#'>
       <div className='w-[500px] h-[500px] absolute lg:right-[25%] top-[10%] bg-transparent rounded-full glow_shadow -z-[50]'>
       </div>
 
