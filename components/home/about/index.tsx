@@ -1,15 +1,16 @@
 import React from "react";
-import Image from "next/image";
-import AboutImg from "../../../app/assets/aboutUs.png";
 import { Check } from "lucide-react";
+import { BorderBeam } from "@/components/ui/border-beam";
+import { IconCloudDemo } from "@/components/general/IconCloudDemo";
 
 const About = () => {
   return (
-    <div className="container mx-auto py-12 px-4 my-20" id='about'>
+    <div className="container py-12 px-6 my-12 w-full" id='about'>
       <div
-      className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col md:flex-row justify-between items-center rounded-3xl px-14 py-12 border-[1px] border-primary box_shadow">
+      className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col lg:flex-row md:justify-center items-center rounded-3xl lg:px-14 lg:py-8 box_shadow relative overflow-hidden">
+        <BorderBeam size={200} duration={20}/>
 
-        <div className="flex flex-col gap-3 md:w-[50%] ">
+        <div className="flex flex-col gap-3 lg:w-[50%] p-4 pt-6">
           <p className="text-primary">Empowering Your Business</p>
           <h2 className="heading-2 font-semibold text-white">
             About <span className="text-primary italic">X</span>oftics
@@ -32,18 +33,13 @@ const About = () => {
               Customized solutions tailored to your unique needs.
             </li>
           </ul>
-          <button className="btn_primary">
+          <button className="btn_primary max-w-[400px]">
             Get Started
           </button>
         </div>
 
-        <div className="md:w-[50%]  flex justify-center items-center">
-          <Image
-            src={AboutImg}
-            alt="About Zoftics"
-            className="w-full h-auto rounded-lg max-w-[500px]"
-            priority={true}
-          />
+        <div className="lg:w-[50%]  flex justify-center items-center">
+          <IconCloudDemo/>
         </div>
       </div>
 

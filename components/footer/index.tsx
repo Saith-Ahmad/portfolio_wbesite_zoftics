@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,15 +7,19 @@ import Logo from "../../app/assets/logo.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-black bg-opacity-50 backdrop-blur-lg text-white px-10 pb-6 pt-8 mt-[150px]">
+    <footer className=" bg-black bg-opacity-50 backdrop-blur-lg text-white px-10 py-6 pt-20 mt-[150px] overflow-hidden">
       
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         
        
-        <div className="mb-6 lg:mb-0">
+        <motion.div
+          initial={{ opacity: 0, x: -65 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.25 }}
+        className="mb-6 lg:mb-0">
           <Link href={'/'}><Image src={Logo} alt="arc" height={40}/></Link>
           <p className="text-para mt-2">Innovative digital solutions to grow your business.</p>
-        </div>
+        </motion.div>
         
        
         <div>
@@ -48,7 +54,11 @@ const Footer = () => {
         </div>
 
        
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: 65 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.25 }}
+        >
           <h5 className="font-semibold text-lg mb-4">Subscribe to our Newsletter</h5>
           <form className="flex flex-col">
             <input
@@ -60,7 +70,7 @@ const Footer = () => {
               Subscribe
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
 
       

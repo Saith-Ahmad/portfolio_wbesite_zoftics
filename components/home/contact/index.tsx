@@ -1,15 +1,23 @@
+'use client'
+import { motion } from "framer-motion";
+import { BorderBeam } from "@/components/ui/border-beam";
 import React from "react";
 
 const Contact = () => {
   return (
     <div className="container py-12 px-6 my-12 w-full" id="contact">
       
-      <div className="flex flex-col justify-center items-center gap-3">
-        <p className="text-primary active">We are eager to help you</p>
-        <h2 className="heading-2 text-white text-center mb-8">Lets get in Touch!</h2>
-      </div>
+      <motion.div
+      initial={{ opacity: 0, y: -65 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, delay: 0.25 }}
+      className="flex flex-col justify-center items-center gap-3">
+        <div className="text-primary active relative">We are eager to help you<BorderBeam size={70} duration={5}/> </div>
+        <h2 className="heading-2 text-white text-center mb-8 font-medium">Lets get in Touch!</h2>
+      </motion.div>
 
-      <form className="bg-black bg-opacity-50 backdrop-blur-lg border-1 border-primary box_shadow p-6 rounded-lg shadow-md mx-auto w-full">
+      <form className="bg-black bg-opacity-50 backdrop-blur-lg border-1 border-primary box_shadow p-6 rounded-3xl shadow-md mx-auto w-full relative overflow-hidden z-[10]">
+        <BorderBeam size={300} duration={15}/>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
           
           <div>
