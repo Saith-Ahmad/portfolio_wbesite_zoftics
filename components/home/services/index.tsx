@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Card from "../card";
 import { BorderBeam } from "@/components/ui/border-beam";
-import services from './services'
+import services from './services';
 import { StaticImageData } from "next/image";
 
 type Service = {
@@ -28,11 +28,12 @@ const Services = () => {
       <motion.div
         initial={{ opacity: 0, y: -65 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, delay: 0.05 }}
-        className="flex flex-col justify-center items-center gap-3">
+        transition={{ duration: 0.9, delay: 0.25 }}
+        className="flex flex-col justify-center items-center gap-3"
+      >
         <div className="text-primary active relative">
-          Find the best services in the town
-          <BorderBeam size={70} duration={4}/>
+          Find the best services in the town{" "}
+          <BorderBeam size={70} duration={20} />
         </div>
         <h2 className="heading-2 text-white text-center mb-8 font-medium">
           The best Solutions For Your Business!

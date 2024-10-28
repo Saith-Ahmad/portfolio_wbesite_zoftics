@@ -5,10 +5,9 @@ import { IconCloudDemo } from "@/components/general/IconCloudDemo";
 
 const About = () => {
   return (
-    <div className="container py-12 px-6 my-12 w-full" id='about'>
-      <div
-      className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col lg:flex-row md:justify-center items-center rounded-3xl lg:px-14 lg:py-8 box_shadow relative overflow-hidden">
-        <BorderBeam size={200} duration={20}/>
+    <div className="container py-12 px-6 my-12 w-full" id="about">
+      <div className=" bg-black bg-opacity-50 w-full backdrop-blur-lg flex flex-col lg:flex-row md:justify-center items-center rounded-3xl lg:px-14 lg:py-8 box_shadow relative overflow-hidden">
+        <BorderBeam size={200} duration={100} />
 
         <div className="flex flex-col gap-3 lg:w-[50%] p-4 pt-6">
           <p className="text-primary">Empowering Your Business</p>
@@ -33,16 +32,13 @@ const About = () => {
               Customized solutions tailored to your unique needs.
             </li>
           </ul>
-          <button className="btn_primary max-w-[400px]">
-            Get Started
-          </button>
+          <button className="btn_primary max-w-[400px]">Get Started</button>
         </div>
 
         <div className="lg:w-[50%]  flex justify-center items-center">
-          <IconCloudDemo/>
+          <IconCloudDemo />
         </div>
       </div>
-
     </div>
   );
 };
