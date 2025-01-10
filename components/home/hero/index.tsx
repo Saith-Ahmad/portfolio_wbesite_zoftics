@@ -43,7 +43,7 @@ function Hero() {
             tailor strategies that enhance your online presence and drive
             measurable growth.
           </p>
-          <Button message="Get in Touch" />
+          <Button message="Reach Us" />
         </div>
       </div>
     </motion.div>
